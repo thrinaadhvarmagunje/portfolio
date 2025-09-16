@@ -1,0 +1,235 @@
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: rgb(0,0,0);
+  color: #fff;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Nav */
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #111;
+  padding: 1rem 2rem;
+  transition: 0.3s;
+  z-index: 1000;
+}
+#navbar.sticky {
+  background: rgba(0, 0, 0, 0.95);
+  backdrop-filter: blur(10px);
+}
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+.logo {
+  color: #39FF14;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-links a {
+  color: #ccc;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.nav-links a:hover {
+  color: #39FF14;
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+  padding: 2rem;
+  background: #000;
+}
+.hero-content {
+  flex: 1;
+  max-width: 600px;
+}
+.hero-content h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.neon-text {
+  color: #39FF14;
+}
+.tagline {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.hero-img img {
+  max-width: 100%;
+  border-radius: 180px;
+  box-shadow: 0 0 15px #39FF14;
+  justify-content:left;
+}
+
+/* Buttons */
+.btn {
+  padding: 0.8rem 1.5rem;
+  border: 2px solid #39FF14;
+  background: transparent;
+  color: #39FF14;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  background: #39FF14;
+  color: #000;
+}
+
+/* Sections */
+.section {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+.bg-dark {
+  background: #111;
+}
+.section-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #39FF14;
+}
+.timeline li {
+  margin-bottom: 1rem;
+}
+
+/* Cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+.card {
+  background: #1a1a1a;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-10px);
+}
+.neon-icon {
+  color: #39FF14;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Project Grid */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+.project-card {
+  display:flex
+  background: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+.project-card:hover {
+  transform: scale(1.2);}
+
+/* Experience */
+.experience-card {
+  background: #222;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid #39FF14;
+}
+
+/* Contact */
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.contact-info p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: none;
+  background: #222;
+  color: #fff;
+  border-radius: 5px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #111;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+/* Skills Section - Responsive Horizontal Wrap */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;         /* ✅ allows multiple rows */
+  justify-content: center; /* center align */
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.skill-card {
+  flex: 0 0 180px;         /* each card ~180px wide */
+  background: #1a1a1a;
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(57, 255, 20, 0.1);
+}
+.skill-card p {
+  margin-top: 0.5rem;
+  font-weight: 600;
+  color: #ddd;
+}
+.skill-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px #39FF14;
+}
+
